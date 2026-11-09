@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="Author" content="Makoviichuk Liza">
+<meta name="Description" content="Лабораторна робота. Таблиця товарів магазину корейської косметики.">
+<meta name="Keywords" content="таблиця, корейська косметика, HTML, CSS, K-beauty">
+<title>Лабораторна робота. Варіант №9 — K-Beauty Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h3>Магазин корейської косметики — Варіант №9</h3>
+
+<table class="tbl9" cellpadding="2" title="Залишки та ціни корейської косметики" lang="uk">
+  <caption>Таблиця 1. Результати обліку товарів та параметри асортименту</caption>
+
+  <colgroup>
+    <col class="col-no">
+    <col class="col-p1">
+    <col class="col-p2">
+    <col class="col-param"><col class="col-param"><col class="col-param"><col class="col-param"><col class="col-param">
+    <col class="col-add">
+    <col class="col-res">
+    <col class="col-sum"><col class="col-sum">
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th rowspan="3">№</th>
+      <th colspan="7">Загальні дані</th>
+      <th rowspan="3">Сума</th>
+      <th colspan="3">Вид косметики та ціна</th>
+    </tr>
+    <tr>
+      <th colspan="2" rowspan="2">Товар</th>
+      <th colspan="5">Кількість продажів за кожен тиждень</th>
+      <th rowspan="2">Вид</th>
+      <th rowspan="2" colspan="2">Ціна</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Блок 1: Догляд за обличчям -->
+    <tr>
+      <td rowspan="3" class="ctr big-num">1</td>
+      <td class="left">COSRX Advanced Snail 96</td>
+      <td class="left">Есенція з муцином</td>
+      <td>15</td><td>22</td><td>18</td><td>25</td><td>30</td>
+      <td class="ctr">12</td>
+      <td rowspan="3" class="ctr">Блок 1 (Догляд)</td>
+      <td colspan="2" class="ctr">В наявності — 790 грн</td>
+    </tr>
+    <tr>
+      <td class="left">Beauty of Joseon Relief Sun</td>
+      <td class="left">Сонцезахисний крем</td>
+      <td>40</td><td>35</td><td>50</td><td>48</td><td>60</td>
+      <td class="ctr">12</td>
+      <td colspan="2" class="ctr">Хіт продажів — 650 грн</td>
+    </tr>
+    <tr>
+      <td class="left">Anua Heartleaf 77% Toner</td>
+      <td class="left">Заспокійливий тонер</td>
+      <td>20</td><td>18</td><td>22</td><td>15</td><td>28</td>
+      <td class="ctr">24</td>
+      <td colspan="2" class="ctr">Обмежено — 890 грн</td>
+    </tr>
+
+    <!-- Блок 2: Сироватки та ампули -->
+    <tr>
+      <td rowspan="3" class="ctr">2</td>
+      <td class="left">Skin1004 Centella Ampoule</td>
+      <td class="left">Відновлювальна ампула</td>
+      <td>12</td><td>14</td><td>10</td><td>16</td><td>18</td>
+      <td class="ctr">18</td>
+      <td rowspan="3" class="ctr">Блок 2 (Сироватки)</td>
+      <td colspan="2" class="ctr">В наявності — 720 грн</td>
+    </tr>
+    <tr>
+      <td class="left">Some By Mi AHA-BHA-PHA</td>
+      <td class="left">Кислотна сироватка</td>
+      <td>8</td><td>12</td><td>15</td><td>11</td><td>9</td>
+      <td class="ctr">12</td>
+      <td colspan="2" class="ctr">В наявності — 680 грн</td>
+    </tr>
+    <tr>
+      <td class="left">Purito Seoul Wonder Releaf</td>
+      <td class="left">Сироватка з центеллою</td>
+      <td>25</td><td>30</td><td>22</td><td>28</td><td>35</td>
+      <td class="ctr">24</td>
+      <td colspan="2" class="ctr">В наявності — 750 грн</td>
+    </tr>
+
+    <!-- Блок 3: Очищення -->
+    <tr>
+      <td rowspan="3" class="ctr">3</td>
+      <td class="left">Banila Co Clean It Zero</td>
+      <td class="left">Гідрофільний бальзам</td>
+      <td>30</td><td>25</td><td>28</td><td>32</td><td>40</td>
+      <td class="ctr">12</td>
+      <td rowspan="3" class="ctr">Блок 3 (Очищення)</td>
+      <td colspan="2" class="ctr">В наявності — 820 грн</td>
+    </tr>
+    <tr>
+      <td class="left">Round Lab Birch Juice Cleanser</td>
+      <td class="left">Гель для вмивання</td>
+      <td>18</td><td>20</td><td>25</td><td>22</td><td>19</td>
+      <td class="ctr">12</td>
+      <td colspan="2" class="ctr">В наявності — 590 грн</td>
+    </tr>
+    <tr>
+      <td class="left">Pyunkang Yul Acne Facial Cleanser</td>
+      <td class="left">Пінна для вмивання</td>
+      <td>14</td><td>16</td><td>12</td><td>18</td><td>15</td>
+      <td class="ctr">24</td>
+      <td colspan="2" class="ctr">Знижка — 440 грн</td>
+    </tr>
+
+    <!-- Блок 4: Маски та Догляд за губами -->
+    <tr>
+      <td rowspan="3" class="ctr">4</td>
+      <td class="left">Laneige Lip Sleeping Mask</td>
+      <td class="left">Нічна маска для губ</td>
+      <td>50</td><td>45</td><td>60</td><td>55</td><td>70</td>
+      <td class="ctr">18</td>
+      <td rowspan="3" class="ctr">Блок 4 (Маски)</td>
+      <td colspan="2" class="ctr">Топ вибір — 710 грн</td>
+    </tr>
+    <tr>
+      <td class="left">I'm From Honey Mask</td>
+      <td class="left">Поживна маска</td>
+      <td>10</td><td>8</td><td>12</td><td>9</td><td>11</td>
+      <td class="ctr">12</td>
+      <td colspan="2" class="ctr">Обмежено — 980 грн</td>
+    </tr>
+    <tr>
+      <td class="left">Mediheal N.M.F Ampoule Mask</td>
+      <td class="left">Тканинна маска (набір)</td>
+      <td>100</td><td>90</td><td>110</td><td>105</td><td>120</td>
+      <td class="ctr">6</td>
+      <td colspan="2" class="ctr">В наявності — 120 грн</td>
+    </tr>
+
+    <!-- Блок 5: Декоративна косметика -->
+    <tr>
+      <td class="ctr">5</td>
+      <td class="left">TIRTIR Mask Fit Red Cushion</td>
+      <td class="left">Тональний кушон</td>
+      <td>22</td><td>28</td><td>25</td><td>30</td><td>32</td>
+      <td class="ctr">12</td>
+      <td class="ctr">Блок 5 (Декор)</td>
+      <td colspan="2" class="ctr">Новинка — 950 грн</td>
+    </tr>
+  </tbody>
+</table>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
